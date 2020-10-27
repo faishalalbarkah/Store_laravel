@@ -14,9 +14,9 @@ class ListOrder extends Model
         return $this->belongsTo('App\Models\Order');
     }
 
-    public function user()
+    public function customer()
     {
-        return $this->belongsTo('App\Models\User');
+        return $this->belongsTo('App\Models\Customer');
     }
 
     public function checkout()
@@ -26,6 +26,6 @@ class ListOrder extends Model
 
     public function cart()
     {
-        return $this->belongsTo('App\Models\Cart');
+        return $this->belongsTo('App\Models\Transaction');
     }
 }

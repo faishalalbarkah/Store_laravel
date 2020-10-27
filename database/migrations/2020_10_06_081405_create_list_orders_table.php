@@ -16,7 +16,7 @@ class CreateListOrdersTable extends Migration
         Schema::create('list_orders', function (Blueprint $table) {
             $table->id();
             $table->integer('order_id');
-            $table->integer('user_id');
+            $table->integer('customer_id');
             $table->timestamps();
         });
     }

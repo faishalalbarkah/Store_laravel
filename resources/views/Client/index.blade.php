@@ -37,7 +37,7 @@
 
 @section('content')
     <!-- Cart -->
-    <div class="wrap-header-cart js-panel-cart">
+    {{-- <div class="wrap-header-cart js-panel-cart">
         <div class="s-full js-hide-cart"></div>
 
         <div class="header-cart flex-col-l p-l-65 p-r-25">
@@ -121,7 +121,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <!-- Slider -->
     <section class="section-slide">
@@ -620,7 +620,7 @@
     </div>
 
     <!-- Modal1 -->
-    <div class="wrap-modal1 js-modal1 p-t-60 p-b-20  " id='exampleModal'>
+    {{-- <div class="wrap-modal1 js-modal1 p-t-60 p-b-20  " id='exampleModal'>
         <div class="overlay-modal1 js-hide-modal1"></div>
 
         <div class="container">
@@ -638,9 +638,9 @@
                                 <div class="wrap-slick3-arrows flex-sb-m flex-w"></div>
 
                                 <div class="slick3 gallery-lb">
-                                    <div class="item-slick3" data-thumb="{{ Storage::url($product->image) }}">
+                                    <div class="item-slick3" data-thumb="{{ Storage::url($products->image) }}">
                                         <div class="wrap-pic-w pos-relative">
-                                            <img src="{{ Storage::url($product->image) }}" height="300px" alt="IMG-PRODUCT">
+                                            <img src="{{ Storage::url($products->image) }}" height="300px" alt="IMG-PRODUCT">
 
                                             <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04"
                                                 href="images/product-detail-01.jpg">
@@ -649,7 +649,7 @@
                                         </div>
                                     </div>
 
-                                    {{-- <div class="item-slick3"
+                                    <div class="item-slick3"
                                         data-thumb="images/product-detail-02.jpg">
                                         <div class="wrap-pic-w pos-relative">
                                             <img src="images/product-detail-02.jpg" alt="IMG-PRODUCT">
@@ -670,7 +670,7 @@
                                                 <i class="fa fa-expand"></i>
                                             </a>
                                         </div>
-                                    </div> --}}
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -783,7 +783,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
 @endsection
 @push('js')
